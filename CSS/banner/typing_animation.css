@@ -1,0 +1,20 @@
+#typing_animation {
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn;
+    animation-duration: 4s;
+}
+
+#typing_animation .text {
+    margin: 10px;
+}
+
+#typing_animation .text.second_sec {
+    color: blue;
+    font-weight: bolder;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ } 

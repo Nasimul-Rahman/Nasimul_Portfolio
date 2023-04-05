@@ -1,0 +1,37 @@
+@import 'typing_animation.css';
+
+banner {
+    background: rgb(73,2,40);
+    background: linear-gradient(90deg, rgba(73,2,40,1) 0%, rgba(2,0,36,1) 100%, rgba(135,6,6,1) 100%);
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    width: 100vw;
+    height: 95vh;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #name {
+    font-size: 200%;
+    animation: fadeIn 4s;
+  }
+
+  #profile_pic {
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    background-image: url('media/Profile_Pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: 15px;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ } 
