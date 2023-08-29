@@ -1,37 +1,47 @@
 @import 'typing_animation.css';
 
 banner {
-    background: rgb(73,2,40);
-    background: linear-gradient(90deg, rgba(73,2,40,1) 0%, rgba(2,0,36,1) 100%, rgba(135,6,6,1) 100%);
+    background: #1C1C1C;
     color: whitesmoke;
     font-size: 30px;
-    font-family: 'Roboto Mono', monospace;
-    width: 100vw;
+    width: 85%;
     height: 95vh;
+
+
+    position: relative;
+    left: 15%;
   
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
+
+#banner_logo {
+  width: 30vw;
+}
+
+.banner_text {
+  margin-left: 20px;
+}
   
-  #name {
-    font-size: 200%;
-    animation: fadeIn 4s;
-  }
+#name {
+  font-size: 200%;
+  animation: fadeIn 4s;
+}
 
-  #profile_pic {
-    width: 150px;
-    height: 150px;
-    background-color: gray;
-    background-image: url('media/Profile_Pic.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    margin-top: 15px;
-  }
+#profile_pic {
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  background-image: url('media/Profile_Pic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-top: 15px;
+}
 
-  @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- } 
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
