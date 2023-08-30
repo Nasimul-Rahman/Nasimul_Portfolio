@@ -1,3 +1,8 @@
 @import 'banner/banner.css';
 @import 'section_skills.css';
 @import 'navbar/navbar.css';
+
+body {
+    background-color: #F9F9F9;
+    margin: 0px;
+}
