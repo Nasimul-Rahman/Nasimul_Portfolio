@@ -5,6 +5,7 @@
     height: 100%;
     width: 12.5%;
     color: #F9F9F9;
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
@@ -30,12 +31,16 @@
 .navbar_logo {
     margin-top: 10px;
     background-color:#A44646;
-    width: 100%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar_logo img{
     border-radius: 50%;
-    width: 100%;
+    width: 80%;
 }
 
 .navbar_item {

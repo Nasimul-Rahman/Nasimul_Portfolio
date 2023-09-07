@@ -5,7 +5,7 @@ banner {
     color: whitesmoke;
     font-size: 30px;
     width: 88%;
-    height: 80vh;
+    height: 85vh;
 
 
     position: relative;
@@ -57,10 +57,22 @@ banner {
   text-decoration: none;
 }
   
-#name {
+/* #name {
   font-size: 200%;
   animation: fadeIn 4s;
   animation-delay: 0.5s;
+} */
+
+#name {
+  font-size: 200%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #A44646; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 #profile_pic {
@@ -83,4 +95,16 @@ banner {
   0% {top: -1000px; left: 0px; width: 100%;}
   50% {top: 0px; left: 0px; width: 100%;}
   100% {top: 0px; left: 12%; width: 88%;}
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #A44646; }
 }
