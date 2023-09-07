@@ -1,6 +1,7 @@
 @import 'banner/banner.css';
 @import 'section_skills.css';
 @import 'navbar/navbar.css';
+@import 'preloader/preloader.css';
 
 body {
     background-color: #FFFFFF;
