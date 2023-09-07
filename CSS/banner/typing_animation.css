@@ -1,8 +1,9 @@
-#typing_animation {
+#name {
     display: flex;
     justify-content: space-between;
-    animation: fadeIn;
-    animation-duration: 4s;
+    animation: fadeIn 4s;
+    animation-delay: 4s;
+
 }
 
 #typing_animation .text {
