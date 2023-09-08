@@ -1,7 +1,8 @@
 @import 'banner/banner.css';
-@import 'section_skills.css';
+@import 'services/section_skills.css';
 @import 'navbar/navbar.css';
 @import 'preloader/preloader.css';
+@import 'footer/footer.css';
 
 body {
     background-color: #1C1C1C;

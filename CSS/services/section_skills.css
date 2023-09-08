@@ -1,6 +1,6 @@
 .skills {
     width: 88%;
-    height: 90vh;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -16,8 +16,8 @@
 .skills_header {
     font-weight: bold;
     color: #1D0C0C;
-    padding: 2rem;
-    margin: 2rem;
+
+    z-index: 2;
 }
 
 .skills_card_container {
@@ -30,11 +30,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    position: relative;
+    bottom: 100px;
 }
 
 .skills_card {
     width: 250px;
     height: 300px;
+    position: relative;
+    animation: float 3s infinite ease-in-out;
 
     /* background-color:  rgb(248,247,247) */
 }
@@ -67,4 +72,14 @@
 
 .skills_card_text h3 {
     text-align: center;
+}
+
+.skills_card:nth-child(2) {
+    top: 200px;
+}
+
+@keyframes float {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
