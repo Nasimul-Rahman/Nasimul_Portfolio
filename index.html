@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/5e8ced63ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="CSS/styles.css" />
-    <script src="JS/script.js"></script>
+    <script src="JS/script.js" defer></script>
   </head>
 
   <body>
@@ -29,23 +29,16 @@
         <div class="navbar_logo">
           <img src="CSS/media/NZR-removebg-preview.png" alt="">
         </div>
-        <div class="navbar_item_container">
-          <div class="navbar_item">
-            <a href="#">Home</a>
-          </div>
-          <div class="navbar_item">
-            <a href="#services">Services</a>
-          </div>
-          <div class="navbar_item">
-            <a href="#">Contact</a>
-          </div>
+        <div class="navbar_items_container">
+          <div class="navbar_item active"><a href="#">HOME</a></div>
+          <div class="navbar_item"><a href="#">SERVICES</a></div>
+          <div class="navbar_item"><a href="#">PROJECTS</a></div>
         </div>
       </section>
 
       <banner>
         <div class="banner_text">
           <span id="name">Nasimul Z Rahman</span>
-          <h2>Django Web Developer</h2>
           <div class="contanct_icons">
             <a href="https://github.com/Nasimul-Rahman"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/nasimul-zahidur-rahman-3758ab221/"><i class="fa-brands fa-linkedin"></i></a>
@@ -60,11 +53,11 @@
       </div>
 
       <section class="skills" id="services">
-        <h2 class="skills_header">Services</h2>
+        <h2 class="skills_header">SERVICES</h2>
         <div class="skills_card_container">
           <div class="skills_card">
             <div class="skills_card_img">
-              <img src="CSS/media/skillset_django_logo-removebg-preview.png" alt="">
+              <img src="CSS/media/skillset_django_logo.png" alt="">
             </div>
             <div class="skills_card_text">
               <h3>Fullstack Web Applications</h3>
@@ -89,6 +82,43 @@
         </div>
       </section>
 
+      <div class="modal">
+        <div class="projects_modal_card" style="right: 40px;">
+          <div class="projects_modal_card_img">
+            <img src="CSS/media/mytodolist_logo.png" alt="">
+            <i class="fa-solid fa-square-xmark modal_close"></i>
+          </div>
+          <div class="projects_modal_card_text">
+            <h3>My To Do List | <a href="https://depoyment-practice.onrender.com/login/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects">
+        <h2 class="projects_header">PROJECTS</h2>
+        <div class="projects_card_container">
+          <div class="projects_card" style="right: 40px;">
+            <div class="projects_card_img">
+              <img src="CSS/media/mytodolist_logo.png" alt="">
+            </div>
+            <div class="projects_card_text">
+              <h3>My To Do List</h3>
+            </div>
+          </div>
+          <div class="projects_card" style="left: 40px;">
+            <div class="projects_card_img">
+              <img src="CSS/media/yessir_logo.png" alt="">
+            </div>
+            <div class="projects_card_text">
+              <h3>Yessir.gg.bet Network</h3>
+            </div>
+          </div>
+          <div class="projects_card"></div>
+        </div>
+      </div>
       <footer>
       </footer>
   </body>

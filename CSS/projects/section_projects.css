@@ -1,0 +1,140 @@
+.projects {
+    height: auto;
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_header {
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.projects_card_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects_card {
+    width: 60%;
+    background-color: #F8F7F7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+
+    position: relative;
+
+    margin: 50px;
+
+    display: flex;
+    justify-content: flex-start;
+
+    transition: 1s;
+}
+
+.projects_card:hover {
+    scale: 1.2;
+    transition: 1s;
+}
+
+.projects_card_img {
+    width: 20%;
+    overflow: hidden;
+}
+
+.projects_card_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.projects_card_text {
+    color: black;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Project Modals */
+
+.modal {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+    animation: fadeIn 1s;
+}
+
+.projects_modal_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    width: 27%;
+    animation: fadeIn 1.5s,
+    slideDown 1.5s;
+    animation-fill-mode: forwards;
+
+    position: relative;
+    bottom: 100px;
+}
+
+.projects_modal_card_img {
+    height: 50%;
+    overflow: hidden;
+    background-color: #223E2A;
+}
+
+.projects_modal_card_img i {
+    color: white;
+    font-size: 25px;
+    position: sticky;
+    bottom: 400px;
+    left: 380px;
+    cursor: pointer;
+}
+
+.projects_modal_card_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.projects_modal_card_text {
+    padding: 20px;
+    height: 50%;
+    background-color: #F8F7F7;
+}
+
+.projects_modal_card_text h3 {
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  } 
+
+@keyframes slideDown {
+    0% {bottom: 100px;}
+    100% {bottom: 0px;}
+    
+}
