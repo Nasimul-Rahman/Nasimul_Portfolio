@@ -4,9 +4,14 @@
 @import 'preloader/preloader.css';
 @import 'footer/footer.css';
 @import 'projects/section_projects.css';
+@import 'about_me/about_me.css';
 
 body {
     /* background-color: #1C1C1C; */
     background-color: #f9f9f9;
     margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
