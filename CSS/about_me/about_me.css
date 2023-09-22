@@ -1,4 +1,37 @@
 .aboutme {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme_header {
+    padding-left: 120px;
+    font-size: 3.5rem;
+    letter-spacing: .15em;
+}
+
+.aboutme_header_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aboutme_card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme_card_text {
+    margin: 20px;
+    width: 50%;
+}
+
+.aboutme_card_img_container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
