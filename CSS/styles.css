@@ -11,6 +11,11 @@ body {
     background-color: #f9f9f9;
     margin: 0px;
     transition: 2s;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h2, h3 {
+    font-family: 'Libre Baskerville', serif;
 }
 
 html {
