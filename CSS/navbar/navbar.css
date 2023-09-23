@@ -3,10 +3,10 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -300px;
+    top: 0px;
 
     animation: navSlideDown1 2s;
-    animation-delay: 7.5s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
     width: 100%;
 
