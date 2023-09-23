@@ -43,7 +43,7 @@ for(let i = 0; i < modals.length; i++) {
 window.addEventListener('scroll', function() {
   console.log(document.documentElement.scrollTop)
   document.querySelector('.navbar').classList.toggle('navbar_onscroll', window.scrollY)
-  document.querySelector('.active').classList.toggle('active_white', window.scrollY)
+  // document.querySelector('.active').classList.toggle('active_white', window.scrollY)
 
   var navbarItems = document.querySelectorAll('.navbar_item')
   
@@ -53,27 +53,44 @@ window.addEventListener('scroll', function() {
 
   if (document.documentElement.scrollTop < 600) {
     // Home
-    document.getElementById('navbar_home').classList.add('active')
     document.getElementById('navbar_services').classList.remove('active_white')
     document.getElementById('navbar_projects').classList.remove('active_white')
     document.getElementById('navbar_aboutme').classList.remove('active_white')
   } else if (document.documentElement.scrollTop >= 600 && document.documentElement.scrollTop < 1150) {
     // Services
     document.getElementById('navbar_services').classList.add('active_white')
-    document.getElementById('navbar_home').classList.remove('active_white')
     document.getElementById('navbar_projects').classList.remove('active_white')
     document.getElementById('navbar_aboutme').classList.remove('active_white')
   } else if (document.documentElement.scrollTop >= 1150 && document.documentElement.scrollTop < 2552) {
     // Projects
     document.getElementById('navbar_projects').classList.add('active_white')
-    document.getElementById('navbar_home').classList.remove('active_white')
     document.getElementById('navbar_services').classList.remove('active_white')
     document.getElementById('navbar_aboutme').classList.remove('active_white')
   } else if (document.documentElement.scrollTop >= 2552) {
     // About me
     document.getElementById('navbar_projects').classList.remove('active_white')
-    document.getElementById('navbar_home').classList.remove('active_white')
-    document.getElementById('navbar_services').classList.remove('active_white')
     document.getElementById('navbar_aboutme').classList.add('active_white')
+    document.getElementById('navbar_services').classList.remove('active_white')
   }
 })
+
+// Preloader
+
+var loader = document.querySelector(".preloader");
+
+// window.addEventListener('load', function() {
+//     loader.style.display = "none"
+// })
+
+window.addEventListener('load', function() {
+    setTimeout(opacityChange, 3000);
+    setTimeout(displayNone, 4000);
+})
+
+function opacityChange() {
+    loader.style.opacity = 0;
+ }
+
+ function displayNone() {
+    loader.style.display = 'none';
+ }

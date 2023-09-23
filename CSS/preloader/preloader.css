@@ -1,6 +1,26 @@
 .preloader {
     width: 100%;
     height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    position: fixed;
     background-color: #1C1C1C;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: 2s;
+}
+
+.preloader img {
+    width: 20%;
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    0% {opacity: 1;}
+    50% {opacity: 0.2;}
+    100% {opacity: 1;}
 }

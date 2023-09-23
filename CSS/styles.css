@@ -10,6 +10,7 @@ body {
     /* background-color: #1C1C1C; */
     background-color: #f9f9f9;
     margin: 0px;
+    transition: 2s;
 }
 
 html {
