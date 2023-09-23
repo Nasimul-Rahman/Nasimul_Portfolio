@@ -83,8 +83,8 @@ var loader = document.querySelector(".preloader");
 // })
 
 window.addEventListener('load', function() {
-    setTimeout(opacityChange, 3000);
-    setTimeout(displayNone, 4000);
+    setTimeout(opacityChange, 4000);
+    setTimeout(displayNone, 6000);
 })
 
 function opacityChange() {

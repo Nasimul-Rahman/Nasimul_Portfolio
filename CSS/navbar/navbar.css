@@ -1,76 +1,13 @@
-/* /* .navbar {
-    overflow: hidden;
-    /* background-color: #A44646; */
-    /* position: fixed;
-    height: 20%;
-    width: 100%;
-    color: #F9F9F9;
-    z-index: 2;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center; */
-
-    /* left: -200px;
-
-    animation: slideRight 1.5s 1;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards; */
-
-/* .navbar_item_container {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-} */
-
-/* .navbar_logo {
-    margin-top: 10px;
-    background-color:#A44646;
-    width: 10rem;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .navbar_logo img{
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-} */
-/* 
-.navbar_item {
-    padding: 7px;
-    border-bottom: 1px solid #F9F9F9;
-    width: 100%;
-} */
-
-/* .navbar_item a {
-    color: #F9F9F9;
-    text-decoration: none;
-} */
-
-/* @keyframes slideRight {
-    0% {left: -200px;}
-    100% {left: 0px;}
-} */
-
-.navbar_indent {
-    width: 100%;
-    height: 10vh;
-}
-
 .navbar {
 
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 0;
+    top: -300px;
+
+    animation: navSlideDown1 2s;
+    animation-delay: 7.5s;
+    animation-fill-mode: forwards;
     width: 100%;
 
     height: 10vh;
@@ -127,62 +64,7 @@
     border-bottom: 3px black solid;
 }
 
-/* Secondary Navbar */
-
-.navbar_secondary {
-    display: none;
-    justify-content: space-between;
-    height: 10vh;
-
-    background-color: black;
-    color: #f9f9f9;
-
-    position: fixed;
-    top: -100px;
-    width: 100%;
-    z-index: 500;
-
-    transition: 2s;
-    animation: navSlideDown 2s;
-    animation-fill-mode: forwards;
-}
-
-.navbar_secondary_logo {
-    z-index: 3;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar_secondary_logo img {
-    width: 5rem;
-}
-
-.navbar_secondary_items_container {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.navbar_secondary_item {
-    width: 33%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar_secondary_item a {
-    font-size: 1.3rem;
-    text-decoration: none;
-}
-
-.active {
-    border-bottom: 3px black solid;
-}
+/* Navbar After Scroll */
 
 .navbar_onscroll {
     background-color: black;
@@ -206,6 +88,12 @@
 .navbar_onscroll img {
     width: 10rem;
     top: 10px;
+}
+
+/* For initial navbar slidedown animation */
+@keyframes navSlideDown1 {
+    0% {top: -300px;}
+    100% {top: 0;}
 }
 
 @keyframes navSlideDown {

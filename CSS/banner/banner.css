@@ -56,6 +56,34 @@ banner {
 .see_more_button a {
   text-decoration: none;
 }
+
+.contact_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  position: relative;
+}
+
+.contact_icons a {
+  opacity: 0;
+  margin: 5px;
+  animation:  contactAnimation 3s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+.contact_icons a:nth-child(1) {
+  animation-delay: 7.5s;
+}
+
+.contact_icons a:nth-child(2) {
+  animation-delay: 8s;
+}
+
+.contact_icons a:nth-child(3) {
+  animation-delay: 8.5s;
+}
   
 /* #name {
   font-size: 200%;
@@ -71,10 +99,10 @@ banner {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(40, end) 1s,
-    blink-caret .75s step-end infinite;
+    typing 2.8s steps(40, end) 5s,
+    blink-caret .75s step-end 1s infinite;
   animation-fill-mode: forwards;
-  animation-delay: 5s;
+  /* animation-delay: 5s; */
   width: 0;
 }
 
@@ -110,4 +138,10 @@ banner {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: black; }
+}
+
+/* contact icon animations */
+@keyframes contactAnimation {
+  0% {opacity: 0; right: 100px;}
+  100% {opacity: 1; right: 0px;}
 }
