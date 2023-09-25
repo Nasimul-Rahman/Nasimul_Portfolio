@@ -56,20 +56,30 @@ window.addEventListener('scroll', function() {
     document.getElementById('navbar_services').classList.remove('active_white')
     document.getElementById('navbar_projects').classList.remove('active_white')
     document.getElementById('navbar_aboutme').classList.remove('active_white')
+    document.getElementById('navbar_contactme').classList.remove('active_white')
   } else if (document.documentElement.scrollTop >= 600 && document.documentElement.scrollTop < 1150) {
     // Services
     document.getElementById('navbar_services').classList.add('active_white')
     document.getElementById('navbar_projects').classList.remove('active_white')
     document.getElementById('navbar_aboutme').classList.remove('active_white')
-  } else if (document.documentElement.scrollTop >= 1150 && document.documentElement.scrollTop < 2552) {
+    document.getElementById('navbar_contactme').classList.remove('active_white')
+  } else if (document.documentElement.scrollTop >= 1150 && document.documentElement.scrollTop < 2052) {
     // Projects
     document.getElementById('navbar_projects').classList.add('active_white')
     document.getElementById('navbar_services').classList.remove('active_white')
     document.getElementById('navbar_aboutme').classList.remove('active_white')
-  } else if (document.documentElement.scrollTop >= 2552) {
+    document.getElementById('navbar_contactme').classList.remove('active_white')
+  } else if (document.documentElement.scrollTop >= 2052 && document.documentElement.scrollTop < 2719) {
     // About me
     document.getElementById('navbar_projects').classList.remove('active_white')
     document.getElementById('navbar_aboutme').classList.add('active_white')
+    document.getElementById('navbar_services').classList.remove('active_white')
+    document.getElementById('navbar_contactme').classList.remove('active_white')
+  } else if (document.documentElement.scrollTop >= 2719) {
+    // Contact me
+    document.getElementById('navbar_contactme').classList.add('active_white')
+    document.getElementById('navbar_projects').classList.remove('active_white')
+    document.getElementById('navbar_aboutme').classList.remove('active_white')
     document.getElementById('navbar_services').classList.remove('active_white')
   }
 })
