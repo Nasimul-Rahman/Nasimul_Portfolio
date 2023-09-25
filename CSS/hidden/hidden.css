@@ -1,0 +1,34 @@
+.hidden_header_left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: 2s;
+}
+
+.hidden_header_right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: 2s;
+}
+
+.hidden_skills_card_container {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: 2s;
+}
+
+.hidden_projects_card {
+    opacity: 0;
+    filter: blur(5px);
+    transform: scale(0.4);
+    transition: 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: scale(1);
+}

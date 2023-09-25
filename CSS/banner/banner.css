@@ -84,6 +84,10 @@ banner {
 .contact_icons a:nth-child(3) {
   animation-delay: 8.5s;
 }
+
+.contact_icons a:nth-child(4) {
+  animation-delay: 9s;
+}
   
 /* #name {
   font-size: 200%;
