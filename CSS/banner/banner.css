@@ -5,7 +5,7 @@ banner {
     background-color: #f9f9f9;
     color: black;
     font-size: 30px;
-    width: 100%;
+    width: 100vw;
     height: 75vh;
 
 
@@ -41,6 +41,10 @@ banner {
   align-items: center;
 
   /* animation: dropDown 3s 1; */
+}
+
+.see_more_section_mobile {
+  display: none;
 }
 
 .see_more_button {
@@ -122,6 +126,10 @@ banner {
   width: 0;
 }
 
+#name2 {
+  display: none;
+}
+
 #profile_pic {
   width: 150px;
   height: 150px;
@@ -131,6 +139,82 @@ banner {
   background-size: cover;
   border-radius: 50%;
   margin-top: 15px;
+}
+
+#phone_banner_logo {
+  display: none;
+}
+
+@media screen and (max-width:992px) {
+  banner {
+    height: 100vh;
+    margin-bottom: 100px;
+  }
+  .banner_text {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #name {
+    display: none;
+  }
+
+  #name2 {
+    display: block;
+  }
+
+  #phone_banner_logo {
+    display: block;
+  }
+
+  #phone_banner_logo img {
+    width: 250px;
+  }
+
+  .see_more_section {
+    display: none;
+  }
+
+  .see_more_section_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.8em;
+    padding-top: 40px;
+  }
+
+  .contact_icons a:nth-child(1) {
+    animation-delay: 4.5s;
+  }
+  
+  .contact_icons a:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .contact_icons a:nth-child(3) {
+    animation-delay: 5.5s;
+  }
+  
+  .contact_icons a:nth-child(4) {
+    animation-delay: 6s;
+  }
+  
+  .contact_icons a:nth-child(5) {
+    animation-delay: 6.5s;
+  }
+  
+  .contact_icons a:nth-child(6) {
+    animation-delay: 8s;
+  }
+  
+  .contact_icons a:nth-child(7) {
+    animation-delay: 8.5s;
+  }
 }
 
 @keyframes fadeIn {

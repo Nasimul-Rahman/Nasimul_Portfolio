@@ -32,26 +32,28 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.projects_card_container_row {
+/* .projects_card_container_row {
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 100%;
-}
+} */
 
 .projects_card {
-    width: 40%;
-    height: 300px;
+    width: 90vw;
+    height: 100px;
     background-color: #F8F7F7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 
     position: relative;
 
-    margin: 50px;
+    margin: 20px;
 
     display: flex;
     justify-content: flex-start;
@@ -60,12 +62,12 @@
 }
 
 .projects_card:hover {
-    scale: 1.1;
+    scale: 1.08;
     transition: 1s;
 }
 
 .projects_card_img {
-    width: 50%;
+    width: 100px;
     overflow: hidden;
 }
 
@@ -162,6 +164,20 @@
 
 .fadeOut {
     animation: fadeOut 1s;
+}
+
+@media screen and (max-width:992px) {
+    .projects_header_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects_header {
+        text-align: center;
+        padding: 0px;
+    }
 }
 
 @keyframes fadeIn {

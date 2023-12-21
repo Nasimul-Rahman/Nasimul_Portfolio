@@ -11,6 +11,7 @@ body {
     /* background-color: #1C1C1C; */
     background-color: #f9f9f9;
     margin: 0px;
+    /* overflow-x: hidden; */
     transition: 2s;
     font-family: 'Libre Baskerville', serif;
 }
@@ -21,4 +22,10 @@ h2, h3 {
 
 html {
     scroll-behavior: smooth;
+}
+
+@media screen and (max-width:992px) {
+    body {
+        overflow: hidden;
+    }
 }
