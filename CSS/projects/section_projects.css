@@ -2,8 +2,6 @@
     height: auto;
     width: 100%;
 
-    position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +51,7 @@
 
     position: relative;
 
-    margin: 20px;
+    margin: 5px;
 
     display: flex;
     justify-content: flex-start;
@@ -72,7 +70,7 @@
 }
 
 .projects_card_img img {
-    width: 100%;
+    width: 100px;
     height: 100%;
 }
 
@@ -176,7 +174,11 @@
 
     .projects_header {
         text-align: center;
-        padding: 0px;
+        padding: 70px;
+    }
+
+    .projects_card_text h3 {
+        font-size: 18px;
     }
 }
 
