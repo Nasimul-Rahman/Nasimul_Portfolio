@@ -94,7 +94,7 @@
     z-index: 1000; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
+    width: 100vw; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
@@ -179,6 +179,37 @@
 
     .projects_card_text h3 {
         font-size: 18px;
+    }
+
+    .projects_modal_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+        width: 27%;
+        animation: fadeIn 1.5s,
+        slideDown 1.5s;
+        animation-fill-mode: forwards;
+    
+        position: relative;
+    
+        height: 500px;
+        width: 300px;
+    }
+
+    .projects_modal_card_text p {
+        font-size: 10px;
+    }
+
+    .projects_modal_card_img i {
+        color: gray;
+        font-size: 25px;
+        position: absolute;
+        bottom: 470px;
+        left: 272px;
+        cursor: pointer;
     }
 }
 
