@@ -3,7 +3,7 @@ footer {
     height: 80vh;
     background-color: black;
     padding: 40px;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .contactme_header_container {
@@ -35,4 +35,14 @@ footer {
 
 .contactme_links_text {
     padding: 10px;
+}
+
+@media screen and (max-width:992px) {
+    .contactme_header_container {
+        justify-content: center;
+    }
+    
+    .contactme_header {
+        padding: 0px;
+    }
 }
