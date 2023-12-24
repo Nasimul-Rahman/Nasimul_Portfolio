@@ -79,6 +79,9 @@
 }
 
 @media screen and (max-width:992px) {
+    .aboutme {
+        height: 200vh;
+    }
     .aboutme_header_container {
         justify-content: center;
     }
@@ -97,7 +100,7 @@
 
     .aboutme_text_card {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         height: 90vh;
     }
 
