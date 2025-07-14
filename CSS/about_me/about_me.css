@@ -74,6 +74,10 @@
     width: 30%;
 }
 
+.aboutme_card_img_container img {
+    width: 40vh
+}
+
 .aboutme_card_img_container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -107,6 +111,10 @@
     .aboutme_text_card p {
         width: 80vw;
         text-align: center;
+    }
+
+    .aboutme_card_img_container img {
+    width: 20vh
     }
 
 }
