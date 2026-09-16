@@ -1,0 +1,27 @@
+.certification {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: red;
+}
+
+.certifications_header_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certifications_header {
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+
+    font-size: 3.5rem;
+    letter-spacing: .15em;
+}
